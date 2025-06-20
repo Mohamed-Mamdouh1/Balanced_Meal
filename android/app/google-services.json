@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1033686621977",
+    "project_id": "balamced-meal",
+    "storage_bucket": "balamced-meal.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1033686621977:android:f740d64676ba84d88def88",
+        "android_client_info": {
+          "package_name": "com.example.meal_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAe4Q6NVfuctVARGWZ2bChrjAfSiGEQcqY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
