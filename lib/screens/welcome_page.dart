@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:meal_app/home/personal_details_page.dart';
+import 'package:meal_app/screens/personal_details_page.dart';
 import 'package:meal_app/widgets/active_button.dart';
 
 class WelcomePage extends StatelessWidget {
@@ -11,10 +11,10 @@ class WelcomePage extends StatelessWidget {
       body: Stack(
         children: [
           Image(
-            image: AssetImage('assets/th.jpg'),
+            image: AssetImage('assets/img.png'),
             width: double.maxFinite,
             height: double.maxFinite,
-            fit: BoxFit.cover,
+            fit: BoxFit.fill,
           ),
           SafeArea(
             child: Column(
@@ -47,7 +47,7 @@ class WelcomePage extends StatelessWidget {
                         Navigator.of(context).push(
                           MaterialPageRoute(
                             builder: (ctx) {
-                              return  PersonalDetailsPage();
+                              return PersonalDetailsPage();
                             },
                           ),
                         );

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:meal_app/home/ingredients_page.dart';
 import 'package:meal_app/widgets/details_text_form_field.dart';
+
+import 'ingredients_page.dart';
 
 enum Gender {
   Male,
@@ -35,7 +36,8 @@ class _PersonalDetailsPageState extends State<PersonalDetailsPage> {
   }) {
     if (gender.toLowerCase() == 'female') {
       return 655.1 + (9.56 * weightKg) + (1.85 * heightCm) - (4.67 * age);
-    } else {
+    }
+    else {
       return 666.47 + (13.75 * weightKg) + (5 * heightCm) - (6.75 * age);
     }
   }
@@ -45,7 +47,10 @@ class _PersonalDetailsPageState extends State<PersonalDetailsPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        leading: const BackButton(),
+        leading: IconButton(
+          icon: const Icon(Icons.arrow_left),
+          onPressed: () => Navigator.pop(context),
+        ),
         title: const Text('Enter your details'),
         elevation: 0,
         backgroundColor: Colors.white,
